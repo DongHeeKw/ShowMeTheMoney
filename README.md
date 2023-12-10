@@ -31,7 +31,7 @@
     - [ ] 로컬 경로에 저장 => 서버 PC로 이전 
 
 2. 매 주 토요일, 6개의 번호가 갱신된다.
-   - [ ] 로컬 dataset에 해당 번호 Update
+   - [x] 로컬 dataset에 해당 번호 Update
    - [ ] github의 lotto/dataset/lotto_data.csv 경로에 최신화.
    - [ ] 최신화 데이터를 이용하여 5 round 번호 추출
 
