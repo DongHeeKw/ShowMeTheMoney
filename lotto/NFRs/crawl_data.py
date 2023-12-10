@@ -87,5 +87,5 @@ def crawl_lotto_exel(param):
 
     driver.quit()
 
-crawl_lotto_exel("All")
-crawl_lotto_exel("New")
+# crawl_lotto_exel("All")
+# crawl_lotto_exel("New")
