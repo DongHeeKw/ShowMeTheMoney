@@ -14,6 +14,10 @@ num_counts = pd.Series(num_counts).value_counts()
 # 가장 많이 나온 순으로 정렬
 sorted_nums = num_counts.sort_values(ascending=False)
 
+# Num과 Count 열을 갖는 데이터프레임으로 변환
+sorted_nums_df = pd.DataFrame({'Num': sorted_nums.index, 'count': sorted_nums.values})
+sorted_nums_df.to_csv(f'{data_path}/frequency_num.csv', index=False, header=['Num', 'Count'])
+
 # 숫자 합이 가장 많이 나온순으로 정렬
 sorted_sums = df['Sum'].value_counts()
 
