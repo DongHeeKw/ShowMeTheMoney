@@ -16,7 +16,5 @@ def main():
     for i, lotto_nums in enumerate(lotto_num_list, start=1):
         print(f'로또 {i} 번호 : {lotto_nums}')
 
-    print(lotto_num_list)     
-
 if __name__ == "__main__":
     main()

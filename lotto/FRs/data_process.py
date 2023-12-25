@@ -11,7 +11,7 @@ df = pd.read_csv(csv_data_file)
 num_counts = df.iloc[:, 2:8].values.flatten()
 num_counts = pd.Series(num_counts).value_counts()
 
-# 가장 많이 나온 순으로 정렬
+# 가장 적게 나온 순으로 정렬
 sorted_nums = num_counts.sort_values(ascending=False)
 
 # Num과 Count 열을 갖는 데이터프레임으로 변환
