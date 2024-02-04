@@ -2,7 +2,7 @@ import random
 import csv
 
 working_dir = r'C:\Users\dongh\OneDrive\Desktop\workspace\SMTM'
-data_path = f'{working_dir}\ShowMeTheMoney\lotto\dataset'
+data_path = f'{working_dir}\ShowMeTheMoney\lotto\data'
 max_freq_lottonum = 300
 
 def generate_numbers():
@@ -17,7 +17,7 @@ def generate_numbers():
 
 def check_sum_range(numbers):
     total_sum = sum(numbers)
-    return 134 <= total_sum <= 142
+    return 133 <= total_sum <= 143
 
 def load_frequency_data(file_path):
     frequency_data = {}
@@ -32,10 +32,10 @@ def load_frequency_data(file_path):
 def calculate_priority(numbers, frequency_data):
     total_priority_1st = 0.0
     total_priority_2nd = 0.0
+    num = sum(numbers)
+    total_priority_1st = 1 / (1 + abs(138 - num))  # Priority based on proximity to 138
     for num in numbers:
-        total_priority_1st += 0.8 / (138 - abs(138 - num))  # Priority based on proximity to 138
         total_priority_2nd += 0.0003 * (max_freq_lottonum - frequency_data.get(num, 0))  # Priority based on frequency with lower weight
-        
     return total_priority_1st, total_priority_2nd
 
 def exec_algo():

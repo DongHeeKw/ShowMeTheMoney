@@ -7,7 +7,7 @@ import pandas as pd
 
 working_dir = r'C:\Users\dongh\OneDrive\Desktop\workspace\SMTM'
 lotto_url = 'https://dhlottery.co.kr'
-data_path = f'{working_dir}\ShowMeTheMoney\lotto\dataset'
+data_path = f'{working_dir}\ShowMeTheMoney\lotto\data'
 
 # 최신 회차 크롤링
 def get_max_count():

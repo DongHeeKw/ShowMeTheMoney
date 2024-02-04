@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 
 working_dir = r'C:\Users\dongh\OneDrive\Desktop\workspace\SMTM'
-data_path = f'{working_dir}\ShowMeTheMoney\dataset'
+data_path = f'{working_dir}\ShowMeTheMoney\data'
 
 def convert_xls_to_xlsx(input_path, output_path):
     # xls 파일을 DataFrame으로 읽기

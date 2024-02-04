@@ -14,7 +14,7 @@ working_dir = r'C:\Users\dongh\OneDrive\Desktop\workspace\SMTM'
 lotto_url = 'https://dhlottery.co.kr'
 download_path = r'C:\Users\dongh\Downloads'
 downloaded_file = f'{download_path}\excel.xls'
-data_path = f'{working_dir}\ShowMeTheMoney\lotto\dataset'
+data_path = f'{working_dir}\ShowMeTheMoney\lotto\data'
 
 # warning 메세지 출력 안함
 warnings.filterwarnings('ignore')

@@ -1,7 +1,7 @@
 import pandas as pd
 
 working_dir = r'C:\Users\dongh\OneDrive\Desktop\workspace\SMTM'
-data_path = f'{working_dir}\ShowMeTheMoney\lotto\dataset'
+data_path = f'{working_dir}\ShowMeTheMoney\lotto\data'
 csv_data_file = f'{data_path}/lotto_data.csv'
 
 # 데이터프레임 생성
